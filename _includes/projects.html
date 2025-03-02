@@ -1,6 +1,10 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Projects</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% comment %}
+  TODO: combine github repo projects with custom blog posts going over Projects (like solar car and class projects)
+  {% endcomment %}
+  
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
